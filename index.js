@@ -1,4 +1,11 @@
-const name = "Marcos"
-const idade = 35
-const aniv = "24/01/1990"
-console.log ("Eu me chamo",name,"e tenho",idade,"e nasci no dia:",aniv,)
+const express = require ('express')
+const app = express ()
+const PORT = 3000
+
+app.listen(PORT, () => {
+console.log ('app online na porta ${PORT}')
+
+})
+
+
+
