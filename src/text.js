@@ -1,5 +1,5 @@
 const name = "Marcos"
-const idade = 34
+const idade = 35
 const cidade = "Recife"
  
 console.log ("Meu nome é: ",name, "minha idade é: ",idade, )
