@@ -1,6 +1,7 @@
 // ternario 
 
 const hora = 18
+const vd = 100
 
 console.log(
     "Esta de",
@@ -10,5 +11,13 @@ console.log(
     "Noite" 
 )
 
+console.log (
+    "Sua Saude é",
+    vd >= 0 && vd < 10 ? "Pessima" :
+    vd >= 10 && vd < 30 ? "Ruim" :
+    vd >= 30 && vd < 60 ? "Boa" :
+    vd >= 60 && vd < 90 ? "Ótima" :
+    "Exelente"
 
+)
 
