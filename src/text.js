@@ -1,9 +1,14 @@
-const name = "Marcos"
-const idade = 35
-const cidade = "Recife"
- 
-console.log ("Meu nome é: ",name, "minha idade é: ",idade, )
-console.log (`Meu nome é ${name} e minha idade é ${idade}`)
+// ternario 
+
+const hora = 18
+
+console.log(
+    "Esta de",
+    hora >= 0 && hora < 6 ? "Madrugada" :
+    hora >= 6 && hora < 12 ? "dia" :
+    hora >= 12 && hora < 18 ? "Tarde" :
+    "Noite" 
+)
 
 
 
