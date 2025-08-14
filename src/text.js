@@ -18,6 +18,5 @@ console.log (
     vd >= 30 && vd < 60 ? "Boa" :
     vd >= 60 && vd < 90 ? "Ótima" :
     "Exelente"
-
 )
 
