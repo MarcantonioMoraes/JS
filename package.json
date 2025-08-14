@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/MarcantonioMoraes/JS/issues"
   },
-  "homepage": "https://github.com/MarcantonioMoraes/JS#readme"
+  "homepage": "https://github.com/MarcantonioMoraes/JS#readme",
+  "devDependencies": {}
 }
