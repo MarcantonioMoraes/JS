@@ -68,8 +68,18 @@ prompt.question("Digite o valor que deseja trasferir:",answer => {
     prompt.close()
 })*/
 
+const statust = "bom";
+const salario = 2000;
+let bonus = 0;
 
-
+if (statust === "otimo"){
+    bonus = salario * 0.3
+}else if(statust === "bom"){
+    bonus = salario * 0.2
+}else {
+    console.log ("Não bateu a meta")
+}
+console.log(`Bónus calculado: $${bonus.toFixed(2)} Reais`)
 
 
 
