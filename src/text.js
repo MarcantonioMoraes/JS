@@ -31,12 +31,12 @@ if (sideA === sideB && sideB === sideC){
 };*/
 
 // Input de usuario
-const rl = require ("node:readline");
+/*const rl = require ("node:readline");
 const prompt = rl.createInterface({
     input: process.stdin, output: process.stdout
-})
+})*/
 
-prompt.question("Digite sua idade:",answer => {
+/*prompt.question("Digite sua idade:",answer => {
     const age = Number.parseInt(answer);
     if (Number.isNaN(age)){
         console.log("O que você digitou não é um numero valido!")
@@ -50,7 +50,23 @@ prompt.question("Digite sua idade:",answer => {
     prompt.close();
 });
 
-
+let bank = 3000;
+console.log(`Valor total do Banco é de ${bank}`);
+prompt.question("Digite o valor que deseja trasferir:",answer => {
+    const amount = Number.parseInt (answer);
+    if (Number.isNaN(amount)){
+        console.log("O numero não é valido");
+    }else if (amount > bank){
+        console.log("Maior que o total");
+    }else if (amount <= 0){
+        console.log("Valor tem que ser possitivo");
+    }else {
+        bank -= amount
+        console.log (`Você trasferiu ${amount} Reais`)
+        console.log (`Seu Saldo é de ${bank} Reais`)
+    }
+    prompt.close()
+})*/
 
 
 
