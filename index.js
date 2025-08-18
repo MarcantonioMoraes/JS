@@ -13,18 +13,20 @@ prompt.question ("Qual a sua nota: ", escreva1 =>{
             if (Number.isNaN(nota1 && nota2 && nota3)){
                 console.log("Um dos capos não foi preenchido corretamente! Tente de novo!")
                 console.log("Preencha com os números (ex: 1, 2, 3, etc.), não por extenso (ex: um, dois, três, etc.)")
+                console.log("Preencha com numeros entra 0 e 10")
             }else if(nota1 > 10 || nota2 > 10 || nota3 > 10){
                 console.log("Preencha com numeros entra 0 e 10")
+            }  else if(nota1 < 0 || nota2 < 0 || nota3 < 0){
+                console.log("O valor deve ser maior ou igual a zero.")
             }else if (media <= 6){
                 console.log (`Sua nota é ${media.toFixed(2)}  e você foi REPROVADO!`);
-             }else if (media <= 8){
+            }else if (media <= 8){
                 console.log(`Sua nota foi ${media.toFixed(2)} e voçê passou na MÉDIA!`)
-             }else {
+            }else {
                 console.log(`Sua nota é ${media.toFixed(2)} e você foi APROVADO!`)
-             }
+            }
             prompt.close()
             
-
         });
     });
 });
